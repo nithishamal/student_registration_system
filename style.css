@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    /* padding: 0; */
+    background-color: #e0f9ff;
+    background: linear-gradient(to right, #ff7e5f, #feb47b, #86a8e7, #7f7fd5);;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #0f1941;
+    font-weight: bold;
+}
+
+/* Registeration Form Styling */
+.form-container{
+    background: #f1fcfe;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#student-form{
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr 1fr; 
+    gap: 40px;
+    padding: 20px;
+}
+
+#fields{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    background-color: white;
+    color: black;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    background-color: #f1fcff;
+    border-color: #0f1941;
+    box-shadow: 0 0 5px #0f1941;
+}
+
+.records-container{
+    background: #f1fcfe;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#register_btn {
+    font-size: medium;
+    font-weight: bold;
+    background-color: #7f7fd5;
+    width: 150px;
+    color: white;
+    padding: 10px;
+    border: 2px solid #86a8e7;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cancel_btn {
+    font-size: small;
+    font-weight: bold;
+    background-color: #fa0202;
+    width: 150px;
+    color: white;
+    padding: 10px;
+    border: 2px solid #fa0202;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#register_btn:hover {
+    background-color: #86a8e7;
+}
+
+#cancel_btn:hover {
+    background-color: #fc3030;
+}
+
+/* Registered Student Details Table */
+
+.table-container {
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto; 
+}
+
+table {
+    width: 100%;
+    margin: 20px auto;
+    height: 200px;
+    border-collapse: collapse;
+}
+
+thead {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #ff7e5f;
+    color: white;
+}
+
+td button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    width: 80px;
+}
+
+td button.edit {
+    background-color: #ffc107;
+}
+
+.success-message {
+    position: fixed;
+    top: 20px;
+    left: 80%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none; 
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease-in-out;
+}
+  
+.success-message.show {
+    display: block;
+    opacity: 1;
+}
+
+#cancel_btn{
+    display: none;
+}

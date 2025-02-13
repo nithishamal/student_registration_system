@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Student Registration System</h1>
+    </header>
+    <!-- Student Details Form -->
+    <section class="form-container">
+        <h3>Welcome to the Student Registration System! Sign up by entering the details below.</h3>
+        <h3>You can also edit or delete registered student details as needed.</h3>
+        <form id="student-form">
+            <div id ="fields">
+                <label for="student-name">Student Name:</label>
+                <input type="text" id="student-name" class ="input_box">
+            </div>
+            <div id ="fields">
+                <label for="student-id">Student ID:</label>
+                <input type="text" id="student-id" class ="input_box">
+            </div>
+            <div id ="fields">
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" class ="input_box">
+            </div>
+            <div id ="fields">
+                <label for="contact">Contact No:</label>
+                <input type="tel" id="contact" class ="input_box">
+            </div>                   
+        </form>
+        <button id="register_btn" type="submit">Register</button>
+        <button id="cancel_btn" type="submit">Cancel</button>
+
+    </section>
+
+    <!-- Registered Student Details Table -->
+    <section class="records-container">
+        <h2>Registered Students Details</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>ID</th>
+                        <th>Email</th>
+                        <th>Contact</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="student-list">
+    
+                </tbody>
+            </table>
+        </div>       
+    </section>
+
+    <div id="successMessage" class="success-message">Student Registered Successfully!</div>
+</body>
+</html>
