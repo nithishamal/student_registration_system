@@ -116,9 +116,11 @@ document.addEventListener("DOMContentLoaded", () => {
         displayStudents();
         studentForm.reset();
         editIndex = null;
-        registerBtn.textContent = "Register";
+        register_btn.textContent = "Register";
+        register_btn.style.fontSize = "medium";
         document.getElementById("cancel_btn").style.display = "none";
         input_box = document.getElementsByClassName("input_box");
+        console.log(input_box)
         for (i=0;i<input_box.length;i++){
             input_box[i].style.border = "2px solid gray";
         }   
